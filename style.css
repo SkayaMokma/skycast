@@ -1,0 +1,349 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.header {
+  padding: 1%;
+  margin-left: 1%;
+  width: 50%;
+}
+
+.header-slogan {
+  color: white;
+  margin-left: 3%;
+
+}
+.current-link:link, :visited{
+    color: #606C76;
+}
+
+.current-link:hover {
+    color: lightskyblue;
+}
+
+
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-background{
+  position: absolute;
+  z-index: -1;
+  width: 80%;
+  height: 100vh;
+  left: 20%;
+  top: 0%;
+  border-left: 1.2px solid white;
+}
+
+.sidebar-footer {
+  font-size: 15px;
+  padding-top: 17%;
+}
+
+#temp-converter:hover {
+  text-decoration: underline;
+  cursor:pointer
+
+}
+.trademark {
+  font-size: 11px;
+  padding-top: 4%
+}
+
+.weatherbit-link {
+  color: white;
+}
+.weatherbit-link:hover, :visited{
+  text-decoration: underline;
+  color: white
+}
+.search {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  color: black;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+#searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background-color: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#result {
+  height: 20px;
+  position: absolute;
+  height: 54%;
+  width: 30%;
+  left: 30%;
+  top: 32%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font: black;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.searched-city-table {
+  text-align: center
+}
+
+#searched-city-name {
+  font-weight: bold;
+}
+
+#weather-conditions-icon {
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+}
+
+.table-heading {
+  border-bottom: 1px solid gray 
+  
+}
+
+.search-button {
+  background-color: #00B4CC;
+  border-color: #00B4CC
+}
+
+#current-weather-input{
+  border: 1px solid gray
+}
+
+.current-weather-table {
+  position: absolute;
+  top: 50px;
+  left: 950px;
+}
+
+#city-one-name, #city-two-name, #city-three-name, #city-four-name, #city-one-temp, #city-two-temp, #city-three-temp, #city-four-temp, 
+#city-one-conditions, #city-two-conditions, #city-three-conditions, #city-four-conditions {
+  padding: 35px;
+  padding-right: 60px;
+  padding-left: 0px;
+  border-bottom: 1px solid gray
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: relative;
+  left: 30%;
+  top: -450px;
+  /* transform: translate(-50%, -170%); */
+}
+
+html { box-sizing: border-box; }
+html *,
+html *:before,
+html *:after { box-sizing: inherit; }
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  background-color: currentColor;
+}
+
+h1 {
+  margin-bottom: 1.375em;
+  color: #fff;
+  font-weight: 100;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 12em;
+  height: 10em;
+  font-size: 1em; /* control icon size here */
+}
+
+.cloud {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 3.6875em;
+  height: 3.6875em;
+  margin: -1.84375em;
+  background: currentColor;
+  border-radius: 50%;
+  box-shadow:
+    -2.1875em 0.6875em 0 -0.6875em,
+    2.0625em 0.9375em 0 -0.9375em,
+    0 0 0 0.375em #fff,
+    -2.1875em 0.6875em 0 -0.3125em #fff,
+    2.0625em 0.9375em 0 -0.5625em #fff;
+}
+.cloud:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.5em;
+  display: block;
+  width: 4.5625em;
+  height: 1em;
+  background: currentColor;
+  box-shadow: 0 0.4375em 0 -0.0625em #fff;
+}
+.cloud:nth-child(2) {
+  z-index: 0;
+  background: #fff;
+  box-shadow:
+    -2.1875em 0.6875em 0 -0.6875em #fff,
+    2.0625em 0.9375em 0 -0.9375em #fff,
+    0 0 0 0.375em #fff,
+    -2.1875em 0.6875em 0 -0.3125em #fff,
+    2.0625em 0.9375em 0 -0.5625em #fff;
+  opacity: 0.3;
+  transform: scale(0.5) translate(6em, -3em);
+  animation: cloud 4s linear infinite;
+}
+.cloud:nth-child(2):after { background: #fff; }
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  margin: -1.25em;
+  background: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.375em #fff;
+  animation: spin 12s infinite linear;
+}
+.rays {
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  display: block;
+  width: 0.375em;
+  height: 1.125em;
+  margin-left: -0.1875em;
+  background: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0 5.375em #fff;
+}
+.rays:before,
+.rays:after {
+  content: '';
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  display: block;
+  width: 0.375em;
+  height: 1.125em;
+  transform: rotate(60deg);
+  transform-origin: 50% 3.25em;
+  background: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0 5.375em #fff;
+}
+.rays:before {
+  transform: rotate(120deg);
+}
+.cloud + .sun {
+  margin: -2em 1em;
+}
+
+.rain{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 3.75em;
+  height: 3.75em;
+  margin: 0.375em 0 0 -2em;
+  background: currentColor;
+}
+
+.rain:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 1.125em;
+  height: 1.125em;
+  margin: -1em 0 0 -0.25em;
+  background: #0cf;
+  border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+  box-shadow:
+    0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+    -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+    -1.375em -0.125em 0 rgba(255,255,255,0.2);
+  transform: rotate(-28deg);
+  animation: rain 3s linear infinite;
+}
+
+/* Animations */ 
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes cloud {
+  0% { opacity: 0; }
+  50% { opacity: 0.3; }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translate(-200%, -3em);
+  }
+}
+
+@keyframes rain {
+  0% {
+    background: #0cf;
+    box-shadow:
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+      -1.375em -0.125em 0 #0cf;
+  }
+  25% {
+    box-shadow:
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+      -0.875em 1.125em 0 -0.125em #0cf,
+      -1.375em -0.125em 0 rgba(255,255,255,0.2);
+  }
+  50% {
+    background: rgba(255,255,255,0.3);
+    box-shadow:
+      0.625em 0.875em 0 -0.125em #0cf,
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+      -1.375em -0.125em 0 rgba(255,255,255,0.2);
+  }
+  100% {
+    box-shadow:
+      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+      -1.375em -0.125em 0 #0cf;
+  }
+}
+

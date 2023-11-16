@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skycast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for Milligram styling - Google Fonts, CSS Reset, Milligram CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  </head>
+  <body>
+    <div class="header">
+      <img src = "https://wallpaperaccess.com/full/450558.png" class="main-background">
+      <div class = "icon sun-shower">
+        <div class="cloud"></div>
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+        <div class="rain"></div>
+      </div>
+      <h1>Skycast</h1>
+      <dl class="header-slogan">
+          <dt>Weather.</dt>
+          <dd><em>Simplified.</em></dd>
+          <div class="sidebar-footer">
+            <p>Click <em id="temp-converter">here</em> for Celsius</p>
+            <p class="trademark">Brought to you by <em><a href="https://www.weatherbit.io/" class="weatherbit-link">Weatherbit</a></em></p>
+          </div>
+      </dl>
+    </div>
+    <div id="result" hidden>
+      <h3 id="searched-city-name">City Name</h3>
+      <p id="searched-city-temp">Temp</p>
+      <img src="" alt="weather conditions" id="weather-conditions-icon">
+    </div>
+    <div class="wrap">
+    <div class="search">
+      <input id="current-weather-input" type="text" class="searchTerm" placeholder="Search a city" value="">
+      <button type="submit" id="search-button" class="search-button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    </div>
+    <div class="current-weather-table">
+      <table >
+        <thead>
+          <tr>
+            <th class="table-heading">City</th>
+            <th class="table-heading">Temp.</th>
+            <th class="table-heading"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="city-one-name">City 1</td>
+            <td id="city-one-temp">10</td>
+            <td id="city-one-conditions"></td>
+            <tr>
+          <td id="city-two-name">City 2</td>
+            <td id="city-two-temp">20</td>
+            <td id="city-two-conditions"></td>
+          </tr>
+          <tr>
+            <td id="city-three-name">City 3</td>
+            <td id="city-three-temp">30</td>
+            <td id="city-three-conditions"></td>
+          </tr>
+          <tr>
+            <td id="city-four-name">City 4</td>
+            <td id="city-four-temp">40</td>
+            <td id="city-four-conditions"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
